@@ -8,6 +8,8 @@ class Server:
     def start(self):
         if self.config['ServerIPAddress'] == '127.0.0.1':
             print("Server is running on localhost")
+        else:
+            print("error: Server is not running on localhost")
 
 if __name__ == "__main__":
     config_path = os.path.join(os.path.dirname(__file__), '../config.yaml')
